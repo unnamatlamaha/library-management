@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { API_BASE_URL } from "../config";
 
-const API = "http://localhost:5000/api/books";
+const API = `${API_BASE_URL}/books`;
 
 function ViewBooks() {
 

@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { API_BASE_URL } from "../config";
 
-const BOOK_API = "http://localhost:5000/api/books";
-const STUDENT_API = "http://localhost:5000/api/students";
-const ISSUE_API = "http://localhost:5000/api/issues";
+const BOOK_API = `${API_BASE_URL}/books`;
+const STUDENT_API = `${API_BASE_URL}/students`;
+const ISSUE_API = `${API_BASE_URL}/issues`;
 
 function IssueBook() {
 

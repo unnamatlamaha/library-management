@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = "http://localhost:5000/api/books";
+const API = `${process.env.REACT_APP_API_URL || "http://localhost:5000/api"}/books`;
 
 export const getBooks = () => axios.get(API);
 

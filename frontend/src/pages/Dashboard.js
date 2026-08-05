@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { API_BASE_URL } from "../config";
 
 
 function Dashboard() {
@@ -36,7 +37,7 @@ function Dashboard() {
 
             const response = await axios.get(
 
-                "http://localhost:5000/api/dashboard"
+                `${API_BASE_URL}/dashboard`
 
             );
 
